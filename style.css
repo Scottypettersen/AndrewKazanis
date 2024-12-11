@@ -1,0 +1,216 @@
+:root {
+    /* Primary Colors */
+    --red-light: #FF3333;
+    --red-base: #FF0000;
+    --red-dark: #CC0000;
+    
+    --orange-light: #FF884D;
+    --orange-base: #FF6B00;
+    --orange-dark: #CC5500;
+    
+    --blue-light: #3385FF;
+    --blue-base: #0066FF;
+    --blue-dark: #0052CC;
+    
+    /* Typography */
+    --font-primary: 'Archivo', sans-serif;
+    --font-secondary: 'Oswald', sans-serif;
+    
+    /* Spacing */
+    --space-unit: 8px;
+    --space-md: calc(var(--space-unit) * 3);
+    --space-lg: calc(var(--space-unit) * 5);
+    --space-xl: calc(var(--space-unit) * 8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-secondary);
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    padding-top: 60px;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-lg);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.logo {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-items {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.nav-items a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: var(--red-base);
+}
+
+/* Sections */
+.section {
+    padding: var(--space-xl) var(--space-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: 32px;
+    margin-bottom: var(--space-xl);
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+}
+
+/* Color System */
+.color-set {
+    margin-bottom: var(--space-xl);
+}
+
+.color-variants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-md);
+}
+
+.color-block {
+    height: 120px;
+    border-radius: 4px;
+    padding: var(--space-md);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.2s ease;
+}
+
+.color-block:hover {
+    transform: translateY(-2px);
+}
+
+.color-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.color-hex {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* Typography */
+.type-set {
+    margin-bottom: var(--space-xl);
+}
+
+.type-example {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.type-label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666;
+    margin-bottom: var(--space-md);
+}
+
+.type-display {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: var(--space-md);
+}
+
+.archivo {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+.archivo-bold {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+.oswald {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+}
+
+.oswald-bold {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .color-variants {
+        grid-template-columns: 1fr;
+    }
+    
+    .type-display {
+        font-size: 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav {
+        position: static;
+        border-bottom: none;
+    }
+    
+    .color-block {
+        border: 1px solid #000;
+    }
+}
