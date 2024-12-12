@@ -250,6 +250,8 @@ h2 {
 
 /* Logo Guidelines Section Enhanced Styles */
 
+/* Logo Guidelines Section Enhanced Styles */
+
 /* Section Introduction */
 .section-intro {
     max-width: 700px;
@@ -267,9 +269,11 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: var(--space-xl);
     margin-bottom: var(--space-2xl);
+    justify-content: center; /* Center the grid */
+    align-items: start;     /* Align items to the top */
 }
 
-.guidelines-card {
+.guidelines-card { /* This is now OUTSIDE of .section-intro */
     background: white;
     border-radius: 12px;
     padding: var(--space-xl);
@@ -289,6 +293,7 @@ h2 {
     color: var(--color-slate);
     padding-bottom: var(--space-sm);
     border-bottom: 2px solid var(--color-orange);
+    text-align: center;
 }
 
 /* Construction Grid Styles */
@@ -297,10 +302,37 @@ h2 {
     padding: var(--space-xl);
     background: var(--bg-light);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
 }
 
 .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-2xl);
+    background: white;
+    border-radius: 8px;
+    margin-bottom: var(--space-lg);
+}
+/* Construction Grid Styles */
+.construction-grid {
     position: relative;
+    padding: var(--space-xl);
+    background: var(--bg-light);
+    border-radius: 8px;
+    /* Add this to center the content within the grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    /* Center the logo container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
     padding: var(--space-2xl);
     background: white;
     border-radius: 8px;
@@ -359,23 +391,41 @@ h2 {
 }
 
 /* Size Requirements Styles */
+.size-requirements-section {
+    padding: var(--space-2xl) 0;
+    text-align: center; /* Center the header and .size-examples */
+}
+
+.size-requirements-section h2 {
+    margin-bottom: var(--space-lg);
+}
+
 .size-examples {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
     padding: var(--space-lg);
     background: var(--bg-light);
     border-radius: 8px;
+    gap: var(--space-xl);
+    margin: 0 auto;
 }
 
 .size-item {
-    text-align: center;
+    text-align: center; /* Center text within the item */
+    display: flex; /* Use flexbox for image centering */
+    flex-direction: column; /* Stack image and label vertically */
+    align-items: center;   /* Center items horizontally within size-item */
+}
+
+.size-item img { /* Target the image directly */
+    max-width: 100%; /* Prevent image from overflowing its container */
+    height: auto;    /* Maintain aspect ratio */
+    display: block; /* Prevents small gap below image */
+    margin: 0 auto;
 }
 
 .size-label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: var(--space-sm);
 }
 
@@ -850,8 +900,3 @@ h2 {
         font-size: 2rem;
     }
     
-    .identity-grid,
-    .color-grid,
-    .type-grid,
-    .applications-grid {
-        grid-template-columns: 1
