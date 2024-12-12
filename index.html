@@ -12,7 +12,9 @@
 <body>
     <nav class="nav">
         <div class="container">
-            <a href="#" class="nav-brand">AK</a>
+            <a href="#" class="nav-brand">
+                <img src="AK2.png" alt="AK Logo" class="nav-logo">
+            </a>
             <div class="nav-links">
                 <a href="#brief">Brief</a>
                 <a href="#identity">Identity</a>
@@ -25,9 +27,11 @@
 
     <header class="hero">
         <div class="container">
-            <h1>Andrew Kazanis</h1>
-            <div class="hero-line"></div>
-            <p class="hero-subtitle">Brand Identity System</p>
+            <div class="hero-content">
+                <img src="Kazanis Orange.png" alt="Kazanis" class="hero-logo">
+                <div class="hero-line"></div>
+                <p class="hero-subtitle">Brand Identity System</p>
+            </div>
         </div>
     </header>
 
@@ -40,14 +44,23 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="brief-content">
-                    <div class="brief-grid">
-                        <div class="card">
-                            <h3>Brand Purpose</h3>
-                            <p>[Your brand purpose]</p>
+                    <div class="brief-text">
+                        <p>Making cool things is at the heart of what I do as a designer, whether it's crafting VHS slip covers or building engaging websites. My approach centers on a core belief: design should solve problems and communicate clearly, without unnecessary complexity. I'm drawn to minimalism not as a trendy aesthetic, but as a practical philosophy that helps people better understand and connect with ideas.</p>
+                        <p>My brand identity reflects this straightforward approach. The bold color choices – vibrant orange, deep blue, and striking red – aren't just visually appealing; they're strategic tools for communication. Similarly, the typography pairing of Archivo and Oswald balances professionalism with personality, making information both accessible and engaging.</p>
+                        <p>The design world often overcomplicates things. I prefer to strip away the excess and focus on what matters: good communication, clear hierarchy, and purposeful design choices. This philosophy shows up in everything from my logo design to my digital interfaces. Each element serves a purpose, whether it's guiding attention, clarifying information, or creating memorable visual impact.</p>
+                    </div>
+                    <div class="brief-focus-areas">
+                        <div class="focus-area">
+                            <h4>Target Audience</h4>
+                            <p>Passionate individuals and organizations who share my appreciation for simplicity and meaningful design, maintaining a strong moral compass in their work.</p>
                         </div>
-                        <div class="card">
-                            <h3>Target Audience</h3>
-                            <p>[Your audience description]</p>
+                        <div class="focus-area">
+                            <h4>Design Process</h4>
+                            <p>Embracing versatility across print and digital platforms, always focused on making information accessible and engaging.</p>
+                        </div>
+                        <div class="focus-area">
+                            <h4>Vision</h4>
+                            <p>Solving real problems through thoughtful, purposeful design choices that help people understand complex ideas.</p>
                         </div>
                     </div>
                 </div>
@@ -62,23 +75,13 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="identity-grid">
-                    <div class="card">
-                        <h3>Primary Logo</h3>
-                        <div class="logo-frame"></div>
-                        <div class="specs-table">
-                            <div class="spec-row">
-                                <span>Minimum Size</span>
-                                <span>40px height</span>
-                            </div>
-                            <div class="spec-row">
-                                <span>Clear Space</span>
-                                <span>20px all sides</span>
-                            </div>
-                        </div>
+                    <div class="logo-showcase">
+                        <h3>Primary Wordmark</h3>
+                        <img src="Kazanis Orange.png" alt="Kazanis Wordmark" class="logo">
                     </div>
-                    <div class="card">
+                    <div class="logo-showcase">
                         <h3>Logomark</h3>
-                        <div class="logo-frame small"></div>
+                        <img src="AK2.png" alt="AK Logomark" class="logo">
                     </div>
                 </div>
             </div>
@@ -92,7 +95,6 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="color-grid">
-                    <!-- Brand Red -->
                     <div class="color-item">
                         <h3 class="color-name">Brand Red</h3>
                         <div class="color-block" style="background-color: #FF0000"></div>
@@ -104,8 +106,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Deep Blue -->
                     <div class="color-item">
                         <h3 class="color-name">Deep Blue</h3>
                         <div class="color-block" style="background-color: #0047AB"></div>
@@ -117,8 +117,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Vibrant Orange -->
                     <div class="color-item">
                         <h3 class="color-name">Vibrant Orange</h3>
                         <div class="color-block" style="background-color: #FF6B00"></div>
@@ -142,20 +140,56 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="type-grid">
-                    <div class="card">
-                        <h3>Primary Font - Archivo</h3>
-                        <div class="type-sample archivo">
-                            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                            <p>abcdefghijklmnopqrstuvwxyz</p>
-                            <p>1234567890</p>
+                    <div class="type-card">
+                        <div class="type-header">
+                            <h3>Primary Font</h3>
+                            <span class="font-name">Archivo</span>
+                        </div>
+                        <div class="type-samples">
+                            <div class="type-sample">
+                                <span class="sample-label">Regular</span>
+                                <p class="archivo-regular">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                <p class="archivo-regular">abcdefghijklmnopqrstuvwxyz</p>
+                                <p class="archivo-regular">1234567890</p>
+                            </div>
+                            <div class="type-sample">
+                                <span class="sample-label">Medium</span>
+                                <p class="archivo-medium">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                <p class="archivo-medium">abcdefghijklmnopqrstuvwxyz</p>
+                                <p class="archivo-medium">1234567890</p>
+                            </div>
+                            <div class="type-sample">
+                                <span class="sample-label">Bold</span>
+                                <p class="archivo-bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                <p class="archivo-bold">abcdefghijklmnopqrstuvwxyz</p>
+                                <p class="archivo-bold">1234567890</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <h3>Secondary Font - Oswald</h3>
-                        <div class="type-sample oswald">
-                            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                            <p>abcdefghijklmnopqrstuvwxyz</p>
-                            <p>1234567890</p>
+                    <div class="type-card">
+                        <div class="type-header">
+                            <h3>Secondary Font</h3>
+                            <span class="font-name">Oswald</span>
+                        </div>
+                        <div class="type-samples">
+                            <div class="type-sample">
+                                <span class="sample-label">Regular</span>
+                                <p class="oswald-regular">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                <p class="oswald-regular">abcdefghijklmnopqrstuvwxyz</p>
+                                <p class="oswald-regular">1234567890</p>
+                            </div>
+                            <div class="type-sample">
+                                <span class="sample-label">Medium</span>
+                                <p class="oswald-medium">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                <p class="oswald-medium">abcdefghijklmnopqrstuvwxyz</p>
+                                <p class="oswald-medium">1234567890</p>
+                            </div>
+                            <div class="type-sample">
+                                <span class="sample-label">Bold</span>
+                                <p class="oswald-bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                <p class="oswald-bold">abcdefghijklmnopqrstuvwxyz</p>
+                                <p class="oswald-bold">1234567890</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,15 +204,15 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="applications-grid">
-                    <div class="card">
+                    <div class="application-card">
                         <div class="mockup-frame"></div>
                         <h4>Business Cards</h4>
                     </div>
-                    <div class="card">
+                    <div class="application-card">
                         <div class="mockup-frame"></div>
                         <h4>Digital Presence</h4>
                     </div>
-                    <div class="card">
+                    <div class="application-card">
                         <div class="mockup-frame"></div>
                         <h4>Marketing Materials</h4>
                     </div>
@@ -189,6 +223,7 @@
 
     <footer class="footer">
         <div class="container">
+            <img src="AK2.png" alt="AK Logo" class="footer-logo">
             <p>© 2024 Andrew Kazanis</p>
         </div>
     </footer>
