@@ -436,7 +436,6 @@ h2 {
 .oswald-medium { font-family: var(--font-secondary); font-weight: 500; }
 .oswald-bold { font-family: var(--font-secondary); font-weight: 600; }
 
-/* Applications Section */
 .applications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -448,6 +447,11 @@ h2 {
     border-radius: 12px;
     padding: var(--space-lg);
     backdrop-filter: blur(10px);
+    transition: transform var(--transition-normal);
+}
+
+.application-card:hover {
+    transform: translateY(-4px);
 }
 
 .mockup-frame {
@@ -456,14 +460,26 @@ h2 {
     border-radius: 8px;
     margin-bottom: var(--space-md);
     overflow: hidden;
+    position: relative;
+}
+
+.mockup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.application-card:hover .mockup-image {
+    transform: scale(1.05);
 }
 
 .application-card h4 {
     color: white;
     font-family: var(--font-primary);
     margin-bottom: var(--space-xs);
-}
-
+    font-size: 1.1rem;
+    text-align: center;
 /* Footer */
 .footer {
     background: var(--bg-dark);
