@@ -18,6 +18,7 @@
             <div class="nav-links">
                 <a href="#brief">Brief</a>
                 <a href="#identity">Identity</a>
+                <a href="#guidelines">Guidelines</a>
                 <a href="#colors">Colors</a>
                 <a href="#typography">Typography</a>
                 <a href="#applications">Applications</a>
@@ -87,55 +88,199 @@
             </div>
         </section>
 
-        <section id="colors" class="section section-dark">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">03</span>
-                    <h2>Color System</h2>
-                    <div class="section-line"></div>
+        <!-- Replace the current guidelines section with this improved version -->
+<section id="guidelines" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Logo Guidelines</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="guidelines-container">
+            <!-- Logo Construction & Clear Space -->
+            <div class="guidelines-card">
+                <h3 class="guidelines-title">Logo Construction & Clear Space</h3>
+                <div class="construction-guide">
+                    <div class="logo-grid-container">
+                        <!-- Construction Grid -->
+                        <div class="grid-overlay">
+                            <div class="grid-line vertical"></div>
+                            <div class="grid-line horizontal"></div>
+                            <div class="measurement-marker" data-label="X"></div>
+                        </div>
+                        <!-- Logo -->
+                        <img src="Kazanis Orange.png" alt="Logo Construction Guide" class="construction-logo">
+                        <!-- Clear Space Indicators -->
+                        <div class="clear-space-markers">
+                            <div class="marker top"></div>
+                            <div class="marker right"></div>
+                            <div class="marker bottom"></div>
+                            <div class="marker left"></div>
+                        </div>
+                    </div>
+                    <p class="measurement-note">Minimum clear space = X (height of 'K')</p>
                 </div>
-                <div class="color-grid">
-                    <div class="color-item">
+            </div>
+
+            <!-- Size Requirements -->
+            <div class="guidelines-card">
+                <h3 class="guidelines-title">Size Requirements</h3>
+                <div class="size-guide">
+                    <div class="size-comparison">
+                        <div class="size-example minimum">
+                            <img src="AK2.png" alt="Minimum Size" class="size-logo">
+                            <span class="size-label">30px Minimum Height</span>
+                        </div>
+                        <div class="size-example recommended">
+                            <img src="AK2.png" alt="Recommended Size" class="size-logo">
+                            <span class="size-label">60px Recommended Height</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="colors" class="section section-dark">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Color System</h2>
+            <div class="section-line"></div>
+            <p class="section-intro">Our color palette emphasizes clarity and impact, with each color serving a specific purpose in our visual communication.</p>
+        </div>
+
+        <div class="color-system-grid">
+            <!-- Primary Colors -->
+            <div class="color-category">
+                <div class="color-card primary">
+                    <div class="color-header">
                         <h3 class="color-name">Brand Red</h3>
-                        <div class="color-block" style="background-color: #FF0000"></div>
-                        <div class="color-specs">
-                            <span class="color-hex">#FF0000</span>
+                        <div class="color-swatch" style="background-color: #FF0000"></div>
+                    </div>
+                    <div class="color-specs">
+                        <div class="color-code">
+                            <span class="hex">#FF0000</span>
                             <div class="color-values">
                                 <p>RGB: 255, 0, 0</p>
                                 <p>CMYK: 0, 100, 100, 0</p>
                             </div>
                         </div>
+                        <div class="color-usage">
+                            <h4>Usage</h4>
+                            <ul>
+                                <li>Primary CTAs</li>
+                                <li>Important alerts</li>
+                                <li>Accent elements</li>
+                            </ul>
+                        </div>
+                        <div class="color-variations">
+                            <div class="variation" style="background-color: rgba(255, 0, 0, 0.8)"></div>
+                            <div class="variation" style="background-color: rgba(255, 0, 0, 0.6)"></div>
+                            <div class="variation" style="background-color: rgba(255, 0, 0, 0.4)"></div>
+                            <div class="variation" style="background-color: rgba(255, 0, 0, 0.2)"></div>
+                        </div>
                     </div>
-                    <div class="color-item">
+                </div>
+
+                <div class="color-card primary">
+                    <div class="color-header">
                         <h3 class="color-name">Deep Blue</h3>
-                        <div class="color-block" style="background-color: #0047AB"></div>
-                        <div class="color-specs">
-                            <span class="color-hex">#0047AB</span>
+                        <div class="color-swatch" style="background-color: #0047AB"></div>
+                    </div>
+                    <div class="color-specs">
+                        <div class="color-code">
+                            <span class="hex">#0047AB</span>
                             <div class="color-values">
                                 <p>RGB: 0, 71, 171</p>
                                 <p>CMYK: 100, 58, 0, 33</p>
                             </div>
                         </div>
+                        <div class="color-usage">
+                            <h4>Usage</h4>
+                            <ul>
+                                <li>Secondary elements</li>
+                                <li>Interactive components</li>
+                                <li>Support graphics</li>
+                            </ul>
+                        </div>
+                        <div class="color-variations">
+                            <div class="variation" style="background-color: rgba(0, 71, 171, 0.8)"></div>
+                            <div class="variation" style="background-color: rgba(0, 71, 171, 0.6)"></div>
+                            <div class="variation" style="background-color: rgba(0, 71, 171, 0.4)"></div>
+                            <div class="variation" style="background-color: rgba(0, 71, 171, 0.2)"></div>
+                        </div>
                     </div>
-                    <div class="color-item">
+                </div>
+
+                <div class="color-card primary">
+                    <div class="color-header">
                         <h3 class="color-name">Vibrant Orange</h3>
-                        <div class="color-block" style="background-color: #FF6B00"></div>
-                        <div class="color-specs">
-                            <span class="color-hex">#FF6B00</span>
+                        <div class="color-swatch" style="background-color: #FF6B00"></div>
+                    </div>
+                    <div class="color-specs">
+                        <div class="color-code">
+                            <span class="hex">#FF6B00</span>
                             <div class="color-values">
                                 <p>RGB: 255, 107, 0</p>
                                 <p>CMYK: 0, 58, 100, 0</p>
                             </div>
                         </div>
+                        <div class="color-usage">
+                            <h4>Usage</h4>
+                            <ul>
+                                <li>Primary brand color</li>
+                                <li>Key highlights</li>
+                                <li>Brand accents</li>
+                            </ul>
+                        </div>
+                        <div class="color-variations">
+                            <div class="variation" style="background-color: rgba(255, 107, 0, 0.8)"></div>
+                            <div class="variation" style="background-color: rgba(255, 107, 0, 0.6)"></div>
+                            <div class="variation" style="background-color: rgba(255, 107, 0, 0.4)"></div>
+                            <div class="variation" style="background-color: rgba(255, 107, 0, 0.2)"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Color Combinations -->
+            <div class="color-combinations">
+                <h3>Color Combinations</h3>
+                <div class="combination-examples">
+                    <div class="combination-card">
+                        <div class="combination-preview">
+                            <div class="preview-block" style="background-color: #FF6B00">
+                                <span class="preview-text">Primary</span>
+                            </div>
+                            <div class="preview-block" style="background-color: #FF0000">
+                                <span class="preview-text">Accent</span>
+                            </div>
+                        </div>
+                        <p class="combination-label">Primary + Accent</p>
+                    </div>
+                    <div class="combination-card">
+                        <div class="combination-preview">
+                            <div class="preview-block" style="background-color: #0047AB">
+                                <span class="preview-text">Background</span>
+                            </div>
+                            <div class="preview-block" style="background-color: #FF6B00">
+                                <span class="preview-text">Content</span>
+                            </div>
+                        </div>
+                        <p class="combination-label">Background + Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="typography" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-number">04</span>
+                    <span class="section-number">05</span>
                     <h2>Typography</h2>
                     <div class="section-line"></div>
                 </div>
@@ -196,11 +341,10 @@
             </div>
         </section>
 
-        !-- Replace the existing Applications section with this code -->
         <section id="applications" class="section section-dark">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-number">05</span>
+                    <span class="section-number">06</span>
                     <h2>Applications</h2>
                     <div class="section-line"></div>
                 </div>
@@ -228,7 +372,6 @@
 
     <footer class="footer">
         <div class="container">
-          
             <p>© 2024 Andrew Kazanis</p>
         </div>
     </footer>
