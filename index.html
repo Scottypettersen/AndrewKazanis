@@ -3,212 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Brand Guidelines</title>
+    <title>Andrew Kazanis Brand Guidelines</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-brand">AK</div>
+            <a href="#" class="nav-brand">AK</a>
             <div class="nav-links">
+                <a href="#brief">Brief</a>
                 <a href="#identity">Identity</a>
                 <a href="#colors">Colors</a>
                 <a href="#typography">Typography</a>
-                <a href="#usage">Usage</a>
                 <a href="#applications">Applications</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
             <h1>Andrew Kazanis</h1>
             <div class="hero-line"></div>
-            <p class="hero-subtitle">Design System Guidelines</p>
+            <p class="hero-subtitle">Brand Identity System</p>
         </div>
     </header>
 
     <main>
-        <!-- Identity Section -->
-        <section id="identity" class="section">
+        <section id="brief" class="section">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">01</span>
-                    <h2>Brand Identity</h2>
-                    <p class="section-desc">Primary logo and logomark specifications</p>
+                    <h2>Creative Brief</h2>
+                    <div class="section-line"></div>
                 </div>
-
-                <div class="logo-grid">
-                    <div class="logo-primary">
-                        <h3>Primary Logo</h3>
-                        <div class="logo-frame">
-                            <img src="/api/placeholder/800/400" alt="Primary Logo">
+                <div class="brief-content">
+                    <div class="brief-grid">
+                        <div class="card">
+                            <h3>Brand Purpose</h3>
+                            <p>[Your brand purpose]</p>
                         </div>
-                        <div class="logo-specs">
-                            <p>Minimum Size: 100px width</p>
-                            <p>Clear Space: 20px on all sides</p>
-                        </div>
-                    </div>
-
-                    <div class="logo-mark">
-                        <h3>Logomark</h3>
-                        <div class="logo-frame">
-                            <img src="/api/placeholder/400/400" alt="Logomark">
-                        </div>
-                        <div class="logo-specs">
-                            <p>Minimum Size: 50px width</p>
-                            <p>Clear Space: 10px on all sides</p>
+                        <div class="card">
+                            <h3>Target Audience</h3>
+                            <p>[Your audience description]</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Color System -->
-        <section id="colors" class="section">
+        <section id="identity" class="section section-dark">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">02</span>
-                    <h2>Color Palette</h2>
-                    <p class="section-desc">Primary and supporting color specifications</p>
+                    <h2>Identity System</h2>
+                    <div class="section-line"></div>
                 </div>
-
-                <div class="color-category">
-                    <h3>Primary Colors</h3>
-                    <div class="color-grid">
-                        <!-- Red Palette -->
-                        <div class="color-set">
-                            <div class="color-block" style="background-color: #FF1A1A">
-                                <span class="color-name">Red 100</span>
-                                <span class="color-hex">#FF1A1A</span>
+                <div class="identity-grid">
+                    <div class="card">
+                        <h3>Primary Logo</h3>
+                        <div class="logo-frame"></div>
+                        <div class="specs-table">
+                            <div class="spec-row">
+                                <span>Minimum Size</span>
+                                <span>40px height</span>
                             </div>
-                            <div class="color-block" style="background-color: #FF0000">
-                                <span class="color-name">Red 500</span>
-                                <span class="color-hex">#FF0000</span>
-                            </div>
-                            <div class="color-block" style="background-color: #CC0000">
-                                <span class="color-name">Red 700</span>
-                                <span class="color-hex">#CC0000</span>
-                            </div>
-                            <div class="color-block" style="background-color: #990000">
-                                <span class="color-name">Red 900</span>
-                                <span class="color-hex">#990000</span>
-                            </div>
-                        </div>
-
-                        <!-- Orange Palette -->
-                        <div class="color-set">
-                            <div class="color-block" style="background-color: #FF8533">
-                                <span class="color-name">Orange 100</span>
-                                <span class="color-hex">#FF8533</span>
-                            </div>
-                            <div class="color-block" style="background-color: #FF6B00">
-                                <span class="color-name">Orange 500</span>
-                                <span class="color-hex">#FF6B00</span>
-                            </div>
-                            <div class="color-block" style="background-color: #CC5500">
-                                <span class="color-name">Orange 700</span>
-                                <span class="color-hex">#CC5500</span>
-                            </div>
-                            <div class="color-block" style="background-color: #994000">
-                                <span class="color-name">Orange 900</span>
-                                <span class="color-hex">#994000</span>
-                            </div>
-                        </div>
-
-                        <!-- Blue Palette -->
-                        <div class="color-set">
-                            <div class="color-block" style="background-color: #3385FF">
-                                <span class="color-name">Blue 100</span>
-                                <span class="color-hex">#3385FF</span>
-                            </div>
-                            <div class="color-block" style="background-color: #0066FF">
-                                <span class="color-name">Blue 500</span>
-                                <span class="color-hex">#0066FF</span>
-                            </div>
-                            <div class="color-block" style="background-color: #0052CC">
-                                <span class="color-name">Blue 700</span>
-                                <span class="color-hex">#0052CC</span>
-                            </div>
-                            <div class="color-block" style="background-color: #003D99">
-                                <span class="color-name">Blue 900</span>
-                                <span class="color-hex">#003D99</span>
+                            <div class="spec-row">
+                                <span>Clear Space</span>
+                                <span>20px all sides</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="color-specs">
-                    <table class="specs-table">
-                        <thead>
-                            <tr>
-                                <th>Color</th>
-                                <th>HEX</th>
-                                <th>RGB</th>
-                                <th>CMYK</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Primary Red</td>
-                                <td>#FF0000</td>
-                                <td>255, 0, 0</td>
-                                <td>0, 100, 100, 0</td>
-                            </tr>
-                            <!-- Add other colors -->
-                        </tbody>
-                    </table>
+                    <div class="card">
+                        <h3>Logomark</h3>
+                        <div class="logo-frame small"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Typography Section -->
-        <section id="typography" class="section">
+        <section id="colors" class="section section-dark">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">03</span>
-                    <h2>Typography</h2>
-                    <p class="section-desc">Font specifications and usage guidelines</p>
+                    <h2>Color System</h2>
+                    <div class="section-line"></div>
                 </div>
-
-                <div class="type-grid">
-                    <div class="type-primary">
-                        <h3>Primary Font - Archivo</h3>
-                        <div class="type-specimen">
-                            <div class="type-sample archivo-regular">
-                                <span class="weight-label">Regular</span>
-                                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-                                abcdefghijklmnopqrstuvwxyz<br>
-                                1234567890</p>
-                            </div>
-                            <div class="type-sample archivo-bold">
-                                <span class="weight-label">Bold</span>
-                                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-                                abcdefghijklmnopqrstuvwxyz<br>
-                                1234567890</p>
+                <div class="color-grid">
+                    <!-- Brand Red -->
+                    <div class="color-item">
+                        <h3 class="color-name">Brand Red</h3>
+                        <div class="color-block" style="background-color: #FF0000"></div>
+                        <div class="color-specs">
+                            <span class="color-hex">#FF0000</span>
+                            <div class="color-values">
+                                <p>RGB: 255, 0, 0</p>
+                                <p>CMYK: 0, 100, 100, 0</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="type-secondary">
-                        <h3>Secondary Font - Oswald</h3>
-                        <div class="type-specimen">
-                            <div class="type-sample oswald-regular">
-                                <span class="weight-label">Regular</span>
-                                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-                                abcdefghijklmnopqrstuvwxyz<br>
-                                1234567890</p>
+                    <!-- Deep Blue -->
+                    <div class="color-item">
+                        <h3 class="color-name">Deep Blue</h3>
+                        <div class="color-block" style="background-color: #0047AB"></div>
+                        <div class="color-specs">
+                            <span class="color-hex">#0047AB</span>
+                            <div class="color-values">
+                                <p>RGB: 0, 71, 171</p>
+                                <p>CMYK: 100, 58, 0, 33</p>
                             </div>
-                            <div class="type-sample oswald-bold">
-                                <span class="weight-label">Bold</span>
-                                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-                                abcdefghijklmnopqrstuvwxyz<br>
-                                1234567890</p>
+                        </div>
+                    </div>
+
+                    <!-- Vibrant Orange -->
+                    <div class="color-item">
+                        <h3 class="color-name">Vibrant Orange</h3>
+                        <div class="color-block" style="background-color: #FF6B00"></div>
+                        <div class="color-specs">
+                            <span class="color-hex">#FF6B00</span>
+                            <div class="color-values">
+                                <p>RGB: 255, 107, 0</p>
+                                <p>CMYK: 0, 58, 100, 0</p>
                             </div>
                         </div>
                     </div>
@@ -216,56 +134,53 @@
             </div>
         </section>
 
-        <!-- Usage Guidelines -->
-        <section id="usage" class="section">
+        <section id="typography" class="section">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">04</span>
-                    <h2>Usage Guidelines</h2>
-                    <p class="section-desc">Proper application and restrictions</p>
+                    <h2>Typography</h2>
+                    <div class="section-line"></div>
                 </div>
-
-                <div class="usage-grid">
-                    <div class="usage-correct">
-                        <h3>Correct Usage</h3>
-                        <div class="usage-examples">
-                            <img src="/api/placeholder/400/300" alt="Correct Usage Example 1">
-                            <img src="/api/placeholder/400/300" alt="Correct Usage Example 2">
+                <div class="type-grid">
+                    <div class="card">
+                        <h3>Primary Font - Archivo</h3>
+                        <div class="type-sample archivo">
+                            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                            <p>abcdefghijklmnopqrstuvwxyz</p>
+                            <p>1234567890</p>
                         </div>
                     </div>
-
-                    <div class="usage-incorrect">
-                        <h3>Incorrect Usage</h3>
-                        <div class="usage-examples">
-                            <img src="/api/placeholder/400/300" alt="Incorrect Usage Example 1">
-                            <img src="/api/placeholder/400/300" alt="Incorrect Usage Example 2">
+                    <div class="card">
+                        <h3>Secondary Font - Oswald</h3>
+                        <div class="type-sample oswald">
+                            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                            <p>abcdefghijklmnopqrstuvwxyz</p>
+                            <p>1234567890</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Applications -->
-        <section id="applications" class="section">
+        <section id="applications" class="section section-dark">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">05</span>
-                    <h2>Brand Applications</h2>
-                    <p class="section-desc">Examples of brand in use</p>
+                    <h2>Applications</h2>
+                    <div class="section-line"></div>
                 </div>
-
                 <div class="applications-grid">
-                    <div class="application-item">
-                        <img src="/api/placeholder/600/400" alt="Application Example 1">
+                    <div class="card">
+                        <div class="mockup-frame"></div>
                         <h4>Business Cards</h4>
                     </div>
-                    <div class="application-item">
-                        <img src="/api/placeholder/600/400" alt="Application Example 2">
-                        <h4>Letterhead</h4>
+                    <div class="card">
+                        <div class="mockup-frame"></div>
+                        <h4>Digital Presence</h4>
                     </div>
-                    <div class="application-item">
-                        <img src="/api/placeholder/600/400" alt="Application Example 3">
-                        <h4>Digital Applications</h4>
+                    <div class="card">
+                        <div class="mockup-frame"></div>
+                        <h4>Marketing Materials</h4>
                     </div>
                 </div>
             </div>
