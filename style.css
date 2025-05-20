@@ -473,16 +473,6 @@ body {
     font-size: 2rem;
   }
 
-  /* stack all grids to one column */
-  .identity-grid,
-  .guidelines-grid,
-  .color-system-grid,
-  .type-grid,
-  .applications-grid {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    gap: var(--space-md);
-  }
 
   /* tighten up cards */
   .type-card,
